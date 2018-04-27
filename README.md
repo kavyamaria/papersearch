@@ -6,9 +6,16 @@ At the end of the semester, each team must submit the software code produced for
 
 The 20% for the documentation submission includes 5% for overview of functions, 10% for implementation documentation, 5% for usage documentation.
 
-## about
+## overview
+
+
+## implementation details
+
+## software usage
+
+## contribution breakdown
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDkxNDM3NDIsMzQ3NTM3ODNdfQ==
+eyJoaXN0b3J5IjpbMjc2MTI1NDUsMzQ3NTM3ODNdfQ==
 -->
