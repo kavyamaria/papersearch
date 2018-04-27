@@ -8,20 +8,10 @@ The 20% for the documentation submission includes 5% for overview of functions, 
 
 ## overview
 
-This search engine provides 
-
-This tool will be a search engine that will find relevant academic papers, given a specific field in computer science. In addition, the results will link the user to other academic papers that it cites and also other papers that cite the results.
-Students and faculty interested in a specific research area will be able to have a more narrowed search. Because it leads to related papers, people are able to search through webs of results rather than just a list.
-This tool is similar to the expert finding tools and other academic based search engines, however it is different because we are supplying papers on very specific subject areas instead of giving the users vague resources. People would care about this difference because they would have more specific resources to use.
+This search engine allows students and faculty to find relevant academic papers given a specific field. The user is prompted to select a track from a drop down menu and a query. The engine then returns the top results for this query. The tool allows for a more narrow and more thorough search.
 
 ## implementation details
 
 ## software usage
 
 ## contribution breakdown
-
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NzY3MjE2NiwxODE0MDM1NTY3LDI3Nj
-EyNTQ1LDM0NzUzNzgzXX0=
--->
