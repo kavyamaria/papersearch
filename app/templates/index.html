@@ -3,13 +3,11 @@
 
 <head>
 
- <link rel='stylesheet' href='index.css'>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
     <meta charset="utf-8">
   	<base href="/">
     <title>Paper Search</title>
     <!-- Bootstrap Core CSS -->
-
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- BootStrap -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -44,22 +42,22 @@
 </div>
 
 <div class="almostcentered">
-  <form>
+  <form action="/forward/"method="post">
     <input type="text" id="querysearch" name="query" placeholder="Enter a query here">
     <select id="topic"style="position:relative" name="topic">
       <option value="default">Choose a topic</option>
-      <option value="1">Software Foundations</option>
-      <option value="2">Algorithms and Models of Computation</option>
-      <option value="3">Intelligence & Big Data</option>
-      <option value="4">Human & Social Impact</option>
-      <option value="5">Media</option>
-      <option value="6">Scientific, Parallel & high performanc Computing</option>
-      <option value="6">Distributed Systems, Networking</option>
-      <option value="7">Machines</option>
+      <option value=1>Software Foundations</option>
+      <option value=2>Algorithms and Models of Computation</option>
+      <option value=3>Intelligence & Big Data</option>
+      <option value=4>Human & Social Impact</option>
+      <option value=5>Media</option>
+      <option value=6>Scientific, Parallel & high performance Computing</option>
+      <option value=7>Distributed Systems, Networking</option>
+      <option value=8>Machines</option>
    </select>
-
-   <input type="submit" id="SearchButton"value="Search" pattern="relative" style="position:relative" onclick="mysubmit()" >
-
+   <button name="search" type="submit" id="SearchButton">Search</button>
+  <!-- <input type="submit" id="SearchButton"value="Search" pattern="relative" style="position:relative"  > -->
+   <h3> {{query2}}</h3>
   </form>
 </div>
 </div>

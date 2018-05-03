@@ -73,131 +73,132 @@ def searchsig(query, ipt):
     link2 = "&Go.x=0&Go.y=0"
     r = search(query, link1, link2)
     res = r
-    printit(r)
+
     if ipt == 1:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP950&withindisp=SIGSOFT&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP946&withindisp=SIGPLAN&query"
         r = search(query, link1, link2)
-        printit(r)
+
         res.update(r)
     elif ipt == 2:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP914&withindisp=SIGACT&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP5335&withindisp=SIGLOG&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
     elif ipt == 3:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP918&withindisp=SIGAI&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP935&withindisp=SIGIR&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP939&withindisp=SIGMIS&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
     elif ipt == 4:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP1530&withindisp=SIGACCESS&query="
         link2 = "&Go.x=31&Go.y=13"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP922&withindisp=SIGCAS&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP923&withindisp=SIGCHI&query"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP927&withindisp=SIGCSE&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP947&withindisp=SIGSAC&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
     elif ipt == 5:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP923&withindisp=SIGCHI&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP932&withindisp=SIGGRAPH&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP940&withindisp=SIGMM&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP949&withindisp=SIGSIM&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
     elif ipt == 6:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP916&withindisp=SIGAPP&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP1481&withindisp=SIGBED&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP4767&withindisp=SIGHPC&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP945&withindisp=SIGOPS&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
     elif ipt == 7:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP1481&withindisp=SIGBED&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP947&withindisp=SIGSAC&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
     elif ipt == 8:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP917&withindisp=SIGARCH&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP938&withindisp=SIGMICRO&query="
         r = search(query, link1, link2)
         res.update(r)
-        printit(r)
+
     return res
 
-print("Search within a topic (input only the digit of the topic you want):")
-print("1. Software Foundations")
-print("2. Algorithms and Models of Computation")
-print("3. Intelligence & Big Data")
-print("4. Human & Social Impact")
-print("5. Media")
-print("6. Scientific, Parallel, & High Performance Computing")
-print("7. Distributed Systems, Networking, & Security")
-print("8. Machines")
-ipt = int(input("Search within a topic (input only the digit of the topic you want): "))
-query = input("Query: ").replace(" ", "+")
-results = searchsig(query, ipt)
+if __name__ == "__main__":
+    #print("Search within a topic (input only the digit of the topic you want):")
+    #print("1. Software Foundations")
+    #print("2. Algorithms and Models of Computation")
+    #print("3. Intelligence & Big Data")
+    #print("4. Human & Social Impact")
+    #print("5. Media")
+    #print("6. Scientific, Parallel, & High Performance Computing")
+    #print("7. Distributed Systems, Networking, & Security")
+    #print("8. Machines")
+    #ipt = int(input("Search within a topic (input only the digit of the topic you want): "))
+    #query = input("Query: ").replace(" ", "+")
+    results = searchsig("drones", 3)
