@@ -189,6 +189,21 @@ def searchsig(query, ipt):
 
     return res
 
+def createFileAbstract(dct):
+    file = open("abstracts.dat", "w+")
+    for t in dct.keys():
+        abs = dct[t]["abstract"]
+        abs = abs.replace("\n", "") + "\n"
+        file.write(abs)
+    return file
+
+def createFileTitles(dct):
+    file = open("titles.dat", "w+")
+    for t in dct.keys():
+        t = t + "\n"
+        file.write(t)
+    return file
+
 if __name__ == "__main__":
     #print("Search within a topic (input only the digit of the topic you want):")
     #print("1. Software Foundations")
@@ -202,3 +217,5 @@ if __name__ == "__main__":
     #ipt = int(input("Search within a topic (input only the digit of the topic you want): "))
     #query = input("Query: ").replace(" ", "+")
     results = searchsig("drones", 3)
+    createFileAbstract(results)
+    createFileTitles(results)
