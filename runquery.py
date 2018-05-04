@@ -84,114 +84,90 @@ def searchsig(query, ipt):
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP946&withindisp=SIGPLAN&query"
         r = search(query, link1, link2)
-
         res.update(r)
     elif ipt == 2:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP914&withindisp=SIGACT&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP5335&withindisp=SIGLOG&query="
         r = search(query, link1, link2)
         res.update(r)
-
     elif ipt == 3:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP918&withindisp=SIGAI&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP935&withindisp=SIGIR&query="
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP939&withindisp=SIGMIS&query="
         r = search(query, link1, link2)
         res.update(r)
-
     elif ipt == 4:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP1530&withindisp=SIGACCESS&query="
         link2 = "&Go.x=31&Go.y=13"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP922&withindisp=SIGCAS&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP923&withindisp=SIGCHI&query"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP927&withindisp=SIGCSE&query="
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP947&withindisp=SIGSAC&query="
         r = search(query, link1, link2)
         res.update(r)
-
     elif ipt == 5:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP923&withindisp=SIGCHI&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP932&withindisp=SIGGRAPH&query="
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP940&withindisp=SIGMM&query="
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP949&withindisp=SIGSIM&query="
         r = search(query, link1, link2)
         res.update(r)
-
     elif ipt == 6:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP916&withindisp=SIGAPP&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP1481&withindisp=SIGBED&query="
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP4767&withindisp=SIGHPC&query="
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP945&withindisp=SIGOPS&query="
         r = search(query, link1, link2)
         res.update(r)
-
     elif ipt == 7:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP1481&withindisp=SIGBED&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP947&withindisp=SIGSAC&query="
         r = search(query, link1, link2)
         res.update(r)
-
     elif ipt == 8:
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP917&withindisp=SIGARCH&query="
         link2 = "&Go.x=0&Go.y=0"
         r = search(query, link1, link2)
         res.update(r)
-
         link1 = "https://dl.acm.org/results.cfm?within=sponsors.sponsorID%3DSP938&withindisp=SIGMICRO&query="
         r = search(query, link1, link2)
         res.update(r)
-
     return res
 
 def createFileAbstract(dct):
@@ -200,14 +176,49 @@ def createFileAbstract(dct):
         abs = dct[t]["abstract"]
         abs = abs.replace("\n", "") + "\n"
         file.write(abs)
-    return file
 
 def createFileTitles(dct):
     file = open("titles/titles.dat", "w+")
     for t in dct.keys():
         t = t + "\n"
         file.write(t)
-    return file
+
+def createQueryFile(query):
+    file = open("query.txt", "w+")
+    file.write(query)
+
+# inefficient
+def sortCitations(dct):
+    # assuming doc index starts at 1
+    pairs = []
+    count = 1
+    for t in dct.keys():
+        if "citations" not in dct[t].keys():
+            num_citations = 0
+        else:
+            num_citations = int(dct[t]["citations"])
+        pairs.append((count, num_citations))
+        count += 1
+    sorted_pairs = sorted(pairs, key=lambda tup: -tup[1])
+    return sorted_pairs[:20]
+
+def sortDownloads(dct):
+    pairs = []
+    count = 1
+    for t in dct.keys():
+        if "downloads" not in dct[t].keys():
+            num_downloads = 0
+        else:
+            num_downloads = dct[t]["downloads"]
+            if num_downloads == "NA":
+                num_downloads = 0
+            else:
+                num_downloads = int(num_downloads.replace(",", ""))
+        pairs.append((count, num_downloads))
+        count += 1
+    sorted_pairs = sorted(pairs, key=lambda tup: -tup[1])
+    return sorted_pairs[:20]
+
 
 if __name__ == "__main__":
     #print("Search within a topic (input only the digit of the topic you want):")
@@ -221,7 +232,9 @@ if __name__ == "__main__":
     #print("8. Machines")
     #ipt = int(input("Search within a topic (input only the digit of the topic you want): "))
     #query = input("Query: ").replace(" ", "+")
-    results = searchsig("peer+instruction", 4)
+    q = "topic model"
+    results = searchsig(q.replace(" ", "+"), 3)
+
     createFileAbstract(results)
     createFileTitles(results)
 
@@ -231,6 +244,7 @@ if __name__ == "__main__":
     idx = metapy.index.make_inverted_index(cfg)
     ranker = metapy.index.OkapiBM25()
 
+    createQueryFile(q)
     query_path = "query.txt"
 
     query = metapy.index.Document()
@@ -240,8 +254,8 @@ if __name__ == "__main__":
             res = ranker.score(idx, query, 20)
     print("ABSTRACTS")
     print(res)
+    print()
     shutil.rmtree("idx")
-
 
     # rank titles
     cfg2 = "config_titles.toml"
@@ -256,4 +270,11 @@ if __name__ == "__main__":
             res2 = ranker.score(idx2, query, 20)
     print("TITLES")
     print(res2)
+    print()
     shutil.rmtree("idx")
+
+    print("CITATIONS")
+    print(sortCitations(results))
+
+    print("DOWNLOADS")
+    print(sortDownloads(results))
