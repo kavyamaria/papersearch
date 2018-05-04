@@ -3,6 +3,8 @@ from urllib.error import HTTPError
 from urllib.error import URLError
 from bs4 import BeautifulSoup
 import os
+import metapy
+import shutil
 
 def search(query, link1, link2):
     req = Request(link1 + query + link2, headers={'User-Agent': 'Mozilla/5.0'})
@@ -46,6 +48,9 @@ def search(query, link1, link2):
     x = soup.find_all("div", class_="abstract")
     for t in range(len(x)):
         results[titles[t]]["abstract"] = x[t].get_text()
+    for t in titles:
+        if "abstract" not in results[t]:
+            results[t]["abstract"] = "NA"
     return results
 
 def printit(dct):
@@ -190,7 +195,7 @@ def searchsig(query, ipt):
     return res
 
 def createFileAbstract(dct):
-    file = open("abstracts.dat", "w+")
+    file = open("abstracts/abstracts.dat", "w+")
     for t in dct.keys():
         abs = dct[t]["abstract"]
         abs = abs.replace("\n", "") + "\n"
@@ -198,7 +203,7 @@ def createFileAbstract(dct):
     return file
 
 def createFileTitles(dct):
-    file = open("titles.dat", "w+")
+    file = open("titles/titles.dat", "w+")
     for t in dct.keys():
         t = t + "\n"
         file.write(t)
@@ -216,6 +221,39 @@ if __name__ == "__main__":
     #print("8. Machines")
     #ipt = int(input("Search within a topic (input only the digit of the topic you want): "))
     #query = input("Query: ").replace(" ", "+")
-    results = searchsig("drones", 3)
+    results = searchsig("peer+instruction", 4)
     createFileAbstract(results)
     createFileTitles(results)
+
+    # rank abstracts
+    cfg = "config_abstracts.toml"
+
+    idx = metapy.index.make_inverted_index(cfg)
+    ranker = metapy.index.OkapiBM25()
+
+    query_path = "query.txt"
+
+    query = metapy.index.Document()
+    with open(query_path) as query_file:
+        for query_num, line in enumerate(query_file):
+            query.content(line.strip())
+            res = ranker.score(idx, query, 20)
+    print("ABSTRACTS")
+    print(res)
+    shutil.rmtree("idx")
+
+
+    # rank titles
+    cfg2 = "config_titles.toml"
+    idx2 = metapy.index.make_inverted_index(cfg2)
+    ranker = metapy.index.OkapiBM25()
+
+    query_path = "query.txt"
+    query = metapy.index.Document()
+    with open(query_path) as query_file:
+        for query_num, line in enumerate(query_file):
+            query.content(line.strip())
+            res2 = ranker.score(idx2, query, 20)
+    print("TITLES")
+    print(res2)
+    shutil.rmtree("idx")
