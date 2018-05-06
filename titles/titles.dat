@@ -1,65 +1,20 @@
-Extracting topics based on authors, recipients and content in microblogs
-Learning topics and related passages in books
-Exploring Scientific Literature Search through Topic Models
-Refinery: an open source topic modeling web platform
-Collective topic modeling for heterogeneous networks
-Topic-based defect prediction (NIER track)
-Topickr: flickr groups and users reloaded
-Semantic hashing using tags and topic modeling
-Modeling latent topic interactions using quantum interference for information retrieval
-A latent topic model for linked documents
-Concept Embedded Topic Modeling Technique
-Towards noise-resilient document modeling
-A Twofold-LDA Model for Customer Review Analysis
-Who Will You "@"?
-A keyword-topic model for contextual advertising
-Parametric and Non-parametric User-aware Sentiment Topic Models
-Automatic labeling hierarchical topics
-Geo topic model: joint modeling of user's activity area and interests for location recommendation
-Organizing the OCA: learning faceted subjects from a library of digital books
-An LDA-smoothed relevance model for document expansion: a case study for spoken document retrieval
-Hidden factors and hidden topics: understanding rating dimensions with review text
-Tag-Latent Dirichlet Allocation: Understanding Hashtags and Their Relationships
-Predicting Best Responder in Community Question Answering Using Topic Model Method
-DiscWord: Learning Discriminative Topics
-WikiLDA: Towards More Effective Knowledge Acquisition in Topic Models using Wikipedia
-Diversifying Product Review Rankings: Getting the Full Picture
-Modeling item selection and relevance for accurate recommendations: a bayesian approach
-Dynamically Modeling Semantic Dependencies in Web Forum Threads
-Economic Development through Business Profiling: A Text Analysis Based Approach
-An Information-Theoretic Approach for Unsupervised Topic Mining in Large Text Collections
-Big Data - Characterizing an Emerging Research Field Using Topic Models
-Topic modeling in fringe word prediction for AAC
-Mining testing questions on stack overflow
-PedConnect: an intelligent assistant for teacher social networking
-Duplicate bug report detection with a combination of information retrieval and topic modeling
-Linked Topic and Interest Model for Web Forums
-PRESS: PeRsonalized Event Scheduling recommender System (Demonstration)
-Spatial topic modeling in online social media for location recommendation
-Improving LDA topic models for microblogs via tweet pooling and automatic labeling
-Evaluating topic models for information retrieval
-Automatical Storyline Generation with Help from Twitter
-Exploring Document Collections with Topic Frames
-Mining geographic knowledge using location aware topic model
-TM 2015 -- Topic Models: Post-Processing and Applications Workshop
-Hierarchical topic integration through semi-supervised hierarchical topic modeling
-Topic Modeling based on Louvain method in Online Social Networks
-Alternative Title: An Unsupervised Topic-based Method for Identifying Reputation Dimensions in Microblogs
-Topic-based document segmentation with probabilistic latent semantic analysis
-Detecting topical events in digital video
-Collection selection and results merging with topically organized U.S. patents and TREC data
-How much is information systems research addressing key practitioner concerns?
-Capturing term dependencies using a language model based on sentence trees
-Training a selection function for extraction
-The IT professional as stakeholder
-Auto-generation of topic hierarchies for web images from users' perspectives
-Adapting and extending the unfolding model of voluntary job turnover to IS entrepreneurs'
-Teaching Information Systems for Computer Graduation Courses: a report experience using a practical ICT approach
-An empirical validation of a contingency model for information require-ments determination
-Making Black Lives Matter in the Information Technology Profession: Issues, Perspectives, and a Call for Action
-Non risk assessment information security assurance model
-Database model for web-based cooperative applications
-Towards knowledge needs-technology fit model for knowledge management systems
-A necessary clarification of the unfolding model of voluntary turnover
-Evaluation of the competitive landscape of a regional U.S. university's MIS program
-Exponential random graph modeling of communication networks to understand organizational crisis
+An operational semantics for C/C++11 concurrency
+Brief announcement: transaction polymorphism
+DOCASE: a methodic approach to distributed programming
+Designing and implementing Choices: an object-oriented system in C++
+Brief announcement: From sequential to concurrent: correctness and relative efficiency
+NDC++: an approach to concurrent extension of C++
+The DOWL distributed object-oriented language
+Debugging non-deadlock concurrency bugs
+Concurrency for the application programmer
+Sherlock: scalable deadlock detection for concurrent programs
+Composing concurrency control
+Introducing concurrency to a sequential language
+COOL: system support for distributed programming
+Concurrent predicates: a debugging technique for every parallel programmer
+Concurrency annotations for reusable software
+Correctness-preserving derivation of concurrent garbage collection algorithms
+CGCExplorer: a semi-automated search procedure for provably correct concurrent collectors
+A Framework for Heterogeneous Concurrency Control Policies in Distributed Applications
+Achieving Formal Parallel Program Debugging by Incentivizing CS/HPC Collaborative Tool Development
+Systematic concurrent object-oriented programming
