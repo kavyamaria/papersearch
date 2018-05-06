@@ -38,93 +38,85 @@
   <h1>Results for Query: {{query}}</h1>
 </div>
 <div class="list-group" style="width: 100%; margin-top: 3%; border: 0px white;">
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+  <a href="{{results[0]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
     <div class="d-flex w-100 justify-content-between" >
-      <h5 class="mb-1">{{results[0]["title"]}}</h5>
-      <small class="text-muted">3 days ago</small>
+      <h5 class="mb-1">Title: {{results[0]["title"]}}</h5>
+      <small class="text-muted">{{results[0]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[0]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[0]["publisher"]}}</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" style="padding: 3%; border: white;" >
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
+  <a href="{{results[1]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+    <div class="d-flex w-100 justify-content-between" >
+      <h5 class="mb-1">Title: {{results[1]["title"]}}</h5>
+      <small class="text-muted">{{results[1]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[1]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[1]["publisher"]}}</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
+  <a href="{{results[2]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+    <div class="d-flex w-100 justify-content-between" >
+      <h5 class="mb-1">Title: {{results[2]["title"]}}</h5>
+      <small class="text-muted">{{results[2]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[2]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[2]["publisher"]}}</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
+  <a href="{{results[3]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+    <div class="d-flex w-100 justify-content-between" >
+      <h5 class="mb-1">Title: {{results[3]["title"]}}</h5>
+      <small class="text-muted">{{results[3]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[3]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[3]["publisher"]}}</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
+  <a href="{{results[4]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+    <div class="d-flex w-100 justify-content-between" >
+      <h5 class="mb-1">Title: {{results[4]["title"]}}</h5>
+      <small class="text-muted">{{results[4]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[4]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[4]["publisher"]}}</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
+  <a href="{{results[5]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+    <div class="d-flex w-100 justify-content-between" >
+      <h5 class="mb-1">Title: {{results[5]["title"]}}</h5>
+      <small class="text-muted">{{results[5]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[5]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[5]["publisher"]}}</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
+  <a href="{{results[6]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+    <div class="d-flex w-100 justify-content-between" >
+      <h5 class="mb-1">Title: {{results[6]["title"]}}</h5>
+      <small class="text-muted">{{results[6]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[6]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[6]["publisher"]}}</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
+  <a href="{{results[7]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+    <div class="d-flex w-100 justify-content-between" >
+      <h5 class="mb-1">Title: {{results[7]["title"]}}</h5>
+      <small class="text-muted">{{results[7]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[7]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[6]["publisher"]}}</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
+  <a href="{{results[8]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+    <div class="d-flex w-100 justify-content-between" >
+      <h5 class="mb-1">Title: {{results[8]["title"]}}</h5>
+      <small class="text-muted">{{results[8]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[8]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[8]["publisher"]}}</small>
   </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
+  <a href="{{results[9]['citation link']}}" class="list-group-item list-group-item-action flex-column align-items-start"style="padding: 3%; border: white;" >
+    <div class="d-flex w-100 justify-content-between" >
+      <h5 class="mb-1">Title: {{results[9]["title"]}}</h5>
+      <small class="text-muted">{{results[9]["publication date"]}}</small>
     </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">List group item heading</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-    <small class="text-muted">Donec id elit non mi porta.</small>
+    <p class="mb-1">Author: {{results[9]["authors"]}}</p>
+    <small class="text-muted">>Publisher: {{results[9]["publisher"]}}</small>
   </a>
 </div>
 

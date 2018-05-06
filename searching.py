@@ -72,10 +72,11 @@ def rankAbstracts():
     query_path = "query.txt"
 
     query = metapy.index.Document()
-    with open(query_path) as query_file:
-        for query_num, line in enumerate(query_file):
-            query.content(line.strip())
-            res = ranker.score(idx, query, 20)
+    query_file=open(query_path)
+    for query_num, line in enumerate(query_file):
+        query.content(line.strip())
+        res = ranker.score(idx, query, 20)
+    query_file.close()
     shutil.rmtree("idx")
     print("Abstracts:")
     print(res)
@@ -89,10 +90,11 @@ def rankTitles():
 
     query_path = "query.txt"
     query = metapy.index.Document()
-    with open(query_path) as query_file:
-        for query_num, line in enumerate(query_file):
-            query.content(line.strip())
-            res2 = ranker.score(idx2, query, 20)
+    query_file=open(query_path)
+    for query_num, line in enumerate(query_file):
+        query.content(line.strip())
+        res2 = ranker.score(idx2, query, 20)
+    query_file.close()
     shutil.rmtree("idx")
     print("Titles:")
     print(res2)

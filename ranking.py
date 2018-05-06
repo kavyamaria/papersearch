@@ -27,6 +27,7 @@ def rankResults(abstract, title, citation, download, results):
         score[download[x][0] - 1] += score_val * .1
 
     finalResults = getFinalResults(lines, score, results)
+
     return finalResults
 
 def getScores(query, topic):
