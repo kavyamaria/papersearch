@@ -69,9 +69,6 @@ def printit(dct):
             print("\t" + r["abstract"])
         print("\t" + r["citation link"])
         print()
-        c += 1
-        if c == 5:
-            break
 
 def searchsig(query, ipt):
     link1 = "https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query="
