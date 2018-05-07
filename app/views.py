@@ -14,7 +14,8 @@ def index():
 @app.route("/results/", methods=['POST'])
 def display_results():
     #Moving forward code
-    query2 = request.form['query'].replace(" ", "+")
+    original = request.form['query']
+    query2 = original.replace(" ", "+")
     topic = request.form['topic']
     results=getScores(query2,topic)
-    return render_template('results.html', query=query2,results=results)
+    return render_template('results.html', query=query2,results=results, original=original)

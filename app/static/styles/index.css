@@ -96,6 +96,7 @@ nav{
 .centered {
   position: relative;
   top: 45%;
+  margin: 30px;
   display: block;
 
 }
@@ -117,7 +118,6 @@ div{
 
 #querysearch{
 
-
       position: relative;
       padding: 12px 20px;
       margin: 8px 0;
@@ -128,17 +128,29 @@ div{
       display: inline-block;
 }
 
-#topic{
+select{
+  -webkit-appearance: none;
   display: inline-block;
-
-
   padding: 13px 25px;
-  margin: 8px 0;
+  margin: 8px 8px;
   align-self: auto;
   width: 500px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+#topic{
+
+  display: inline-block;
+  padding: 13px 25px;
+  margin: 8px 8px;
+  align-self: auto;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
 }
 
 
