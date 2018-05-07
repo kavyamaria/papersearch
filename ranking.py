@@ -19,12 +19,13 @@ def rankResults(abstract, title, citation, download, results):
         lines = f.read().splitlines()
 
     score = [0] * len(lines)
-    for x in range(len(abstract)):
+    size = min(len(abstract), len(title), len(citation))
+    for x in range(size):
         score_val = 20 - x
-        score[abstract[x][0] - 1] += score_val * .4
-        score[title[x][0] - 1] += score_val * .4
-        score[citation[x][0] - 1] += score_val * .1
-        score[download[x][0] - 1] += score_val * .1
+        score[abstract[x][0]] += score_val * .4
+        score[title[x][0]] += score_val * .4
+        score[citation[x][0]] += score_val * .1
+        score[download[x][0]] += score_val * .1
 
     finalResults = getFinalResults(lines, score, results)
 
@@ -45,6 +46,7 @@ def getScores(query, topic):
     return scores
 
 if __name__ == "__main__":
-    scores = getScores("topic model", 3)
+    scores = getScores("peer instruction", 4)
+
     for x in scores:
         print(x["title"], x["score"])

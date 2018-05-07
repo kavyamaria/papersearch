@@ -20,7 +20,7 @@ def createQueryFile(query):
 def sortCitations(dct):
     # assuming doc index starts at 1
     pairs = []
-    count = 1
+    count = 0
     for t in dct.keys():
         if "citations" not in dct[t].keys():
             num_citations = 0
@@ -36,7 +36,7 @@ def sortCitations(dct):
 
 def sortDownloads(dct):
     pairs = []
-    count = 1
+    count = 0
     for t in dct.keys():
         if "downloads" not in dct[t].keys():
             num_downloads = 0
