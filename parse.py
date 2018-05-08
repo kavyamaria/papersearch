@@ -6,6 +6,7 @@ import os
 import metapy
 import shutil
 
+# called by searchsig to scrape passed in website to create a dictionary of articles
 def search(query, link1, link2):
     req = Request(link1 + query + link2, headers={'User-Agent': 'Mozilla/5.0'})
     webpage = urlopen(req).read()
@@ -53,6 +54,7 @@ def search(query, link1, link2):
             results[t]["abstract"] = "NA"
     return results
 
+# takes dictionary of searchsig & prints out in user friendly way
 def printit(dct):
     c = 0
     for t in dct.keys():
@@ -70,6 +72,8 @@ def printit(dct):
         print("\t" + r["citation link"])
         print()
 
+# takes a user query (string) & topic number (int) to scrape multiple sources to return a thorough
+# dictionary of articles
 def searchsig(query, ipt):
     link1 = "https://dl.acm.org/results.cfm?within=owners.owner%3DHOSTED&srt=_score&query="
     link2 = "&Go.x=0&Go.y=0"

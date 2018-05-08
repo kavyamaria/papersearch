@@ -6,11 +6,13 @@ import sys
 
 from app import app
 
-
+# function that renders the landing page
 @app.route("/")
 def index():
     return render_template('index.html')
 
+# function that takes user input, gets the top ten corresponding articles,
+# and displays them to the user
 @app.route("/results/", methods=['POST'])
 def display_results():
     #Moving forward code

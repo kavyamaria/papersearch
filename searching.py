@@ -1,5 +1,7 @@
 from parse import *
 
+# takes dictionary of article information to create a file of abstracts
+# for corpus
 def createFileAbstract(dct):
     file = open("abstracts/abstracts.dat", "w+")
     for t in dct.keys():
@@ -7,18 +9,22 @@ def createFileAbstract(dct):
         abs = abs.replace("\n", "") + "\n"
         file.write(abs)
 
+# takes dictionary of article information to create a file of article titles
+# for corpus
 def createFileTitles(dct):
     file = open("titles/titles.dat", "w+")
     for t in dct.keys():
         t = t + "\n"
         file.write(t)
 
+# takes user query string to create a file to be used by ranking functions
 def createQueryFile(query):
     file = open("query.txt", "w+")
     file.write(query)
 
+# takes dictionary of article information & returns list of tuples (docid, rank)
+# where rank is defined by citation count
 def sortCitations(dct):
-    # assuming doc index starts at 1
     pairs = []
     count = 0
     for t in dct.keys():
@@ -34,6 +40,8 @@ def sortCitations(dct):
     print()
     return sorted_pairs[:20]
 
+# takes dictionary of article information & returns list of tuples (docid, rank)
+# where rank is defined by download count
 def sortDownloads(dct):
     pairs = []
     count = 0
@@ -54,6 +62,8 @@ def sortDownloads(dct):
     print()
     return sorted_pairs[:20]
 
+# wrapper function that creates dictionary of article information & respective
+# files
 def createFiles(query, topic):
     results = searchsig(query.replace(" ", "+"), topic)
 
@@ -63,6 +73,8 @@ def createFiles(query, topic):
 
     return results
 
+# function that uses BM25 to return a list of tuples (docid, rank) where rank
+# is defined by abstract's relevance to user query
 def rankAbstracts():
     cfg = "config_abstracts.toml"
 
@@ -83,6 +95,8 @@ def rankAbstracts():
     print()
     return res
 
+# function that uses BM25 to return a list of tuples (docid, rank) where rank
+# is defined by article title's relevance to user query
 def rankTitles():
     cfg2 = "config_titles.toml"
     idx2 = metapy.index.make_inverted_index(cfg2)

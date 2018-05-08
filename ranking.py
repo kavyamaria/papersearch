@@ -1,6 +1,8 @@
 from searching import *
 from parse import *
 
+# function that adds score to the respective article's dictionary for
+# the top ten results
 def getFinalResults(lines, score, results):
     scores = list(zip(lines, score))
     sorted_scores = sorted(scores, key=lambda tup: -tup[1])
@@ -14,6 +16,8 @@ def getFinalResults(lines, score, results):
 
     return final_results
 
+# function that uses lists of tuples to assign a weighted score to each
+# article in dictionary of articles & returns the top ten final results
 def rankResults(abstract, title, citation, download, results):
     with open('titles/titles.dat') as f:
         lines = f.read().splitlines()
@@ -31,6 +35,18 @@ def rankResults(abstract, title, citation, download, results):
 
     return finalResults
 
+# function that takes a user string & topic (int) to return the top ten
+# final results
+# wrapper function -- the only function that needs to be called
+# the topics & their corresponding number is as follows:
+    # 1. Software Foundations
+    # 2. Algorithms and Models of Computation
+    # 3. Intelligence and Big Data
+    # 4. Human and Social Impact
+    # 5. Media
+    # 6. Scientific, Parallel, and High Performance Computing
+    # 7. Distributed Systems, Networking, and Security
+    # 8. Machines
 def getScores(query, topic):
     results = createFiles(query, topic)
 
