@@ -61,5 +61,5 @@ To start the application, use `python run.py` and open the browser to the url pr
 The work was split evenly among group members. The following table shows a very brief breakdown of each group member’s contribution to the project.  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Ria Nair:** developed front-end and connected to Python scripts using Flask  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Ann Rajan:** developed ranking algorithm & created demo video  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Kavya Varghese:** developed web scraping & ranking algorithm  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Ann Rajan:** developed ranking algorithm & created demo script  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Kavya Varghese:** developed web scraping & ranking algorithm & created demo video
